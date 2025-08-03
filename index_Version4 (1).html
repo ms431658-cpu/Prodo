@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prodo-Buy | Connect. Grow. Succeed.</title>
+    <!-- Tailwind CSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #000 !important;
+        }
+        .logo-shadow {
+            filter: drop-shadow(0 0 16px rgba(255,255,255,0.25));
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+
+    <!-- Header -->
+    <header class="bg-black shadow-sm sticky top-0 z-40">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <img src="logo.png" alt="Prodo-Buy Logo" class="h-14 w-auto logo-shadow">
+                <a href="#" class="text-2xl font-extrabold text-white hidden sm:inline">Prodo-Buy</a>
+            </div>
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#how-it-works" class="text-gray-300 hover:text-white transition-colors">How It Works</a>
+                <a href="#why-choose-us" class="text-gray-300 hover:text-white transition-colors">Why Us</a>
+                <a href="#success-stories" class="text-gray-300 hover:text-white transition-colors">Success Stories</a>
+                <a href="#contact" class="bg-white hover:bg-gray-200 text-black font-bold py-2 px-6 rounded-full shadow-lg transition-all"
+                   target="_blank"
+                   href="https://docs.google.com/forms/d/18-c4zJ-reGOYh8d-hUF1VMtO65nq10REGqDMW90lRJw/edit">Get Started</a>
+            </div>
+            <!-- Mobile Navigation Toggle -->
+            <div class="md:hidden">
+                <button id="mobile-menu-btn" class="text-gray-300 hover:text-white focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-black shadow-sm pb-4">
+            <div class="flex flex-col space-y-2 px-4">
+                <a href="#how-it-works" class="text-gray-300 hover:text-white transition-colors py-2">How It Works</a>
+                <a href="#why-choose-us" class="text-gray-300 hover:text-white transition-colors py-2">Why Us</a>
+                <a href="#success-stories" class="text-gray-300 hover:text-white transition-colors py-2">Success Stories</a>
+                <a href="https://docs.google.com/forms/d/18-c4zJ-reGOYh8d-hUF1VMtO65nq10REGqDMW90lRJw/edit" target="_blank" class="bg-white hover:bg-gray-200 text-black font-bold py-2 px-4 rounded-full text-center transition-colors">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-black py-16 sm:py-24 md:py-32">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-white mb-4">
+                        Your Growth Partner. <span class="text-white">From Small Scale to Big Deals.</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-gray-300 mb-8 max-w-lg mx-auto md:mx-0">
+                        Prodo-Buy connects small sellers with big buyers and small manufacturers with big partners, helping you scale your business effortlessly.
+                    </p>
+                    <a href="https://docs.google.com/forms/d/18-c4zJ-reGOYh8d-hUF1VMtO65nq10REGqDMW90lRJw/edit" id="hero-cta" target="_blank" class="inline-block bg-white hover:bg-gray-200 text-black text-lg font-bold py-3 px-8 rounded-full shadow-xl transform hover:scale-105 transition-all">Get Started Today</a>
+                </div>
+                <!-- Logo in hero section -->
+                <div class="md:w-1/2 mt-12 md:mt-0 flex justify-center">
+                    <img src="logo.png" alt="Prodo-Buy Logo Large" class="rounded-lg logo-shadow h-64 w-auto bg-black p-4">
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="bg-black py-16">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-white mb-8 text-center">How It Works</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-gray-900 p-8 rounded-xl shadow-lg text-center">
+                        <h3 class="text-xl font-semibold mb-4">Sign Up</h3>
+                        <p class="text-gray-300">Join our platform and create your business profile to start connecting.</p>
+                    </div>
+                    <div class="bg-gray-900 p-8 rounded-xl shadow-lg text-center">
+                        <h3 class="text-xl font-semibold mb-4">Connect</h3>
+                        <p class="text-gray-300">Access a growing network of buyers, sellers, and manufacturers.</p>
+                    </div>
+                    <div class="bg-gray-900 p-8 rounded-xl shadow-lg text-center">
+                        <h3 class="text-xl font-semibold mb-4">Grow</h3>
+                        <p class="text-gray-300">Build partnerships, close deals, and expand your business with ease.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Us Section -->
+        <section id="why-choose-us" class="bg-black py-16">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-white mb-8 text-center">Why Choose Prodo-Buy?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-gray-900 p-8 rounded-xl shadow-lg text-center">
+                        <h3 class="text-xl font-semibold mb-4">Trusted Platform</h3>
+                        <p class="text-gray-300">Verified partners, secure transactions, and transparent processes.</p>
+                    </div>
+                    <div class="bg-gray-900 p-8 rounded-xl shadow-lg text-center">
+                        <h3 class="text-xl font-semibold mb-4">Collaborative Growth</h3>
+                        <p class="text-gray-300">Empowering businesses to succeed together through seamless partnerships.</p>
+                    </div>
+                    <div class="bg-gray-900 p-8 rounded-xl shadow-lg text-center">
+                        <h3 class="text-xl font-semibold mb-4">Efficient Supply Chain</h3>
+                        <p class="text-gray-300">Simplified connections between manufacturers, sellers, and buyers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Stories Section -->
+        <section id="success-stories" class="bg-black py-16">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-white mb-8 text-center">Success Stories</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-900 p-8 rounded-xl shadow-lg">
+                        <h3 class="text-xl font-semibold mb-4 text-white">Small Manufacturer to Big Exporter</h3>
+                        <p class="text-gray-300">"Thanks to Prodo-Buy, we went from local deals to international exports. The platform truly opened new doors for us!"</p>
+                        <span class="text-sm text-gray-500 block mt-4">– A. Patel, Textile Manufacturer</span>
+                    </div>
+                    <div class="bg-gray-900 p-8 rounded-xl shadow-lg">
+                        <h3 class="text-xl font-semibold mb-4 text-white">Small Seller, Big Opportunities</h3>
+                        <p class="text-gray-300">"Prodo-Buy helped me connect with buyers I never thought possible. My business is growing faster than ever!"</p>
+                        <span class="text-sm text-gray-500 block mt-4">– R. Singh, Retailer</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-black py-16">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold text-white mb-4">Ready to Get Started?</h2>
+                <p class="text-gray-300 mb-8">Fill out our quick form and we'll connect you to the right partners.</p>
+                <a href="https://docs.google.com/forms/d/18-c4zJ-reGOYh8d-hUF1VMtO65nq10REGqDMW90lRJw/edit" target="_blank"
+                   class="inline-block bg-white hover:bg-gray-200 text-black font-bold py-3 px-8 rounded-full shadow-xl transition-all">Get Started</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-300 py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- About -->
+                <div>
+                    <h4 class="text-xl font-bold text-white mb-4">Prodo-Buy</h4>
+                    <p class="text-sm">Connecting small businesses with big opportunities. Your partner in growth and success.</p>
+                </div>
+                <!-- Links -->
+                <div>
+                    <h4 class="text-xl font-bold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#how-it-works" class="hover:text-white transition-colors">How It Works</a></li>
+                        <li><a href="#why-choose-us" class="hover:text-white transition-colors">Why Us</a></li>
+                        <li><a href="#success-stories" class="hover:text-white transition-colors">Success Stories</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Social -->
+                <div>
+                    <h4 class="text-xl font-bold text-white mb-4">Connect With Us</h4>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="https://www.instagram.com/prodobuy?igsh=MWd2emRoNXJmcWFlbA==" target="_blank" class="hover:text-white transition-colors" aria-label="Instagram">
+                            <!-- Instagram SVG icon -->
+                            <svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M7.75 2A5.75 5.75 0 002 7.75v8.5A5.75 5.75 0 007.75 22h8.5A5.75 5.75 0 0022 16.25v-8.5A5.75 5.75 0 0016.25 2h-8.5zm0 2h8.5A3.75 3.75 0 0120 7.75v8.5A3.75 3.75 0 0116.25 20h-8.5A3.75 3.75 0 014 16.25v-8.5A3.75 3.75 0 017.75 4zm4.25 3a5.25 5.25 0 100 10.5A5.25 5.25 0 0012 7zm0 2a3.25 3.25 0 110 6.5A3.25 3.25 0 0112 9zm5.5-.75a1 1 0 100 2 1 1 0 000-2z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 text-sm text-center">
+                &copy; 2025 Prodo-Buy. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
